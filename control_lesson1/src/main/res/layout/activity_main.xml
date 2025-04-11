@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="+7 999 999 99 99"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статус:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пол:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="204dp"
+        android:layout_height="49dp"
+        android:text="Удалить контакт"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
+        android:text="Позвонить"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="муж."
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="жен."
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@android:drawable/stat_sys_vp_phone_call"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="студент"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Александр"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="528dp"
+        android:layout_height="418dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="-59dp"
+        tools:layout_editor_absoluteY="-110dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
