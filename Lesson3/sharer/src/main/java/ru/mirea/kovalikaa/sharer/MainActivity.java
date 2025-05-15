@@ -27,29 +27,29 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Intent intent = new Intent(android.content.Intent.ACTION_SEND);
-        intent.setType("*/*");
-        intent.putExtra(Intent.EXTRA_TEXT, "Mirea");
-        startActivity(Intent.createChooser(intent, "Выбор за вами!"));
-
-//        Intent intent = new Intent(Intent.ACTION_PICK);
+//        Intent intent = new Intent(android.content.Intent.ACTION_SEND);
 //        intent.setType("*/*");
-//        ActivityResultCallback<ActivityResult> callback = new
-//                ActivityResultCallback<ActivityResult>() {
-//                    @Override
-//                    public void onActivityResult(ActivityResult result) {
-//                        if (result.getResultCode() == Activity.RESULT_OK) {
-//                            Intent data = result.getData();
-//                            Log.d(MainActivity.class.getSimpleName(), "Data:" + (data != null ?
-//                                    data.getDataString() : null));
-//                        }
-//                    }
-//                };
-//        ActivityResultLauncher<Intent> imageActivityResultLauncher =
-//                registerForActivityResult(
-//                        new ActivityResultContracts.StartActivityForResult(),
-//                        callback);
-//        imageActivityResultLauncher.launch(intent);
+//        intent.putExtra(Intent.EXTRA_TEXT, "Mirea");
+//        startActivity(Intent.createChooser(intent, "Выбор за вами!"));
+
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("*/*");
+        ActivityResultCallback<ActivityResult> callback = new
+                ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                        if (result.getResultCode() == Activity.RESULT_OK) {
+                            Intent data = result.getData();
+                            Log.d(MainActivity.class.getSimpleName(), "Data:" + (data != null ?
+                                    data.getDataString() : null));
+                        }
+                    }
+                };
+        ActivityResultLauncher<Intent> imageActivityResultLauncher =
+                registerForActivityResult(
+                        new ActivityResultContracts.StartActivityForResult(),
+                        callback);
+        imageActivityResultLauncher.launch(intent);
 
 
     }
