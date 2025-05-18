@@ -32,5 +32,10 @@
         android:name="ru.mirea.kovalikaa.mireaproject.WebViewFragment"
         android:label="Браузер"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/nav_bt"
+        android:name="ru.mirea.kovalikaa.mireaproject.BTFragment"
+        android:label="Фоновая задача"
+        tools:layout="@layout/fragment_bt" />
 
 </navigation>

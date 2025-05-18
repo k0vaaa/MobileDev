@@ -24,5 +24,11 @@
             android:id="@+id/nav_web"
             android:icon="@android:drawable/ic_menu_share"
             android:title="Браузер" />
+
+        <item
+            android:id="@+id/nav_bt"
+            android:icon="@android:drawable/checkbox_on_background"
+            android:title="Фоновая задача" />
+
     </group>
 </menu>
