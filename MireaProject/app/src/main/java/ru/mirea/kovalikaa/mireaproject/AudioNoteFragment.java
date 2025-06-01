@@ -46,14 +46,11 @@ public class AudioNoteFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Инициализация пути для аудиофайла
         audioFilePath = new File(requireContext().getExternalFilesDir(Environment.DIRECTORY_MUSIC),
                 "audio_note_" + new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date()) + ".mp3").getAbsolutePath();
 
-        // Проверка разрешений
         checkPermissions();
 
-        // Настройка кнопки записи
         binding.recordButton.setOnClickListener(v -> {
             if (hasPermissions) {
                 if (!isRecording) {
@@ -71,7 +68,6 @@ public class AudioNoteFragment extends Fragment {
             }
         });
 
-        // Настройка кнопки воспроизведения
         binding.playButton.setOnClickListener(v -> {
             if (!isPlaying) {
                 binding.playButton.setText("Остановить воспроизведение");
@@ -85,7 +81,6 @@ public class AudioNoteFragment extends Fragment {
             isPlaying = !isPlaying;
         });
 
-        // Изначально кнопка воспроизведения отключена
         binding.playButton.setEnabled(false);
     }
 

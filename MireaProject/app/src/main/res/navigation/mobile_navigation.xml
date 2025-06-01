@@ -39,6 +39,12 @@
         tools:layout="@layout/fragment_bt" />
 
     <fragment
+        android:id="@+id/nav_hardware"
+        android:name="ru.mirea.kovalikaa.mireaproject.HardwareFragment"
+        android:label="Аппаратная часть"
+        tools:layout="@layout/fragment_hardware" />
+
+    <fragment
         android:id="@+id/nav_sensor"
         android:name="ru.mirea.kovalikaa.mireaproject.SensorFragment"
         android:label="Датчик освещенности"
