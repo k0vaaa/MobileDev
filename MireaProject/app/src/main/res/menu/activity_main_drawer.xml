@@ -36,6 +36,11 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@android:drawable/presence_video_online"
-            android:title="Создание фото" />
+            android:title="Фото-заметка" />
+
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@android:drawable/stat_notify_voicemail"
+            android:title="Аудио-заметка" />
     </group>
 </menu>

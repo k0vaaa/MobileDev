@@ -46,9 +46,15 @@
 
     <fragment
         android:id="@+id/nav_camera"
-        android:name="ru.mirea.kovalikaa.mireaproject.CameraCollageFragment"
-        android:label="Создание снимка"
-        tools:layout="@layout/fragment_camera_collage" />
+        android:name="ru.mirea.kovalikaa.mireaproject.PhotoNoteFragment"
+        android:label="Фото-заметка"
+        tools:layout="@layout/fragment_photonote" />
+
+    <fragment
+        android:id="@+id/nav_audio"
+        android:name="ru.mirea.kovalikaa.mireaproject.AudioNoteFragment"
+        android:label="Аудио-заметка"
+        tools:layout="@layout/fragment_audio_note" />
 
 
 </navigation>

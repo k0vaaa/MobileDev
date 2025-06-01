@@ -11,8 +11,15 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
+
+    <string name="photo_preview">Photo Preview</string>
+    <string name="enter_caption">Enter caption</string>
+    <string name="save_photo">Save Photo</string>
+
     <string name="light_level_value">Текущий уровень освещённости: %.1f люкс</string>
     <string name="no_light_sensor">Датчик освещённости не найден на устройстве</string>
     <string name="sensor_unreliable">Датчик освещённости ненадёжен, попробуйте откалибровать устройство.</string>
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
