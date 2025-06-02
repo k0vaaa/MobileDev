@@ -61,6 +61,17 @@
         android:name="ru.mirea.kovalikaa.mireaproject.AudioNoteFragment"
         android:label="Аудио-заметка"
         tools:layout="@layout/fragment_audio_note" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.kovalikaa.mireaproject.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_filework"
+        android:name="ru.mirea.kovalikaa.mireaproject.FileOperationsFragment"
+        android:label="Работа с файлами"
+        tools:layout="@layout/fragment_file_operations" />
+
 
 
 </navigation>

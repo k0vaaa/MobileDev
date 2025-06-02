@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/bookText"
+        android:layout_width="278dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:hint="Название любимой книги"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+    <EditText
+        android:id="@+id/filmText"
+        android:layout_width="278dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:hint="Название любимого фильма"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookText" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="273dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:hint="Введите имя"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:text="Сохранить информацию"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filmText" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="275dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:hint="Введите возраст"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

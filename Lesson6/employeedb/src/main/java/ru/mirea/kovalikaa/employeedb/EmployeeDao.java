@@ -8,31 +8,17 @@ import androidx.room.Update;
 
 import java.util.List;
 
-//@Dao
-//public interface EmployeeDao {
-//    @Query("SELECT * FROM employee")
-//    List<Employee> getAll();
-//    @Query("SELECT * FROM employee WHERE id = :id")
-//    Employee getById(long id);
-//    @Insert
-//    void insert(Employee employee);
-//    @Update
-//    void update(Employee employee);
-//    @Delete
-//    void delete(Employee employee);
-//}
-
-
 @Dao
 public interface EmployeeDao {
-    @Insert
-    void insert(Employee superhero);
     @Query("SELECT * FROM employee")
     List<Employee> getAll();
     @Query("SELECT * FROM employee WHERE id = :id")
     Employee getById(long id);
+    @Insert
+    void insert(Employee employee);
     @Update
-    void update(Employee superhero);
+    void update(Employee employee);
     @Delete
-    void delete(Employee superhero);
+    void delete(Employee employee);
 }
+

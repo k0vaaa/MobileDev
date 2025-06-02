@@ -47,6 +47,8 @@ dependencies {
     implementation ("androidx.cardview:cardview:1.0.0")
     implementation("androidx.work:work-runtime:2.10.0")
     implementation ("androidx.recyclerview:recyclerview:1.3.+")
+    implementation ("com.google.android.material:material:1.12.0")
+    implementation ("com.itextpdf:itext7-core:7.2.5")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
