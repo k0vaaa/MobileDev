@@ -41,7 +41,10 @@
             android:id="@+id/nav_filework"
             android:icon="@android:drawable/stat_notify_sdcard"
             android:title="Работа с файлами" />
-
+        <item
+            android:id="@+id/nav_authInfo"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Информация" />
 
     </group>
 </menu>

@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -49,6 +50,9 @@ dependencies {
     implementation ("androidx.recyclerview:recyclerview:1.3.+")
     implementation ("com.google.android.material:material:1.12.0")
     implementation ("com.itextpdf:itext7-core:7.2.5")
+
+    implementation(libs.activity)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
